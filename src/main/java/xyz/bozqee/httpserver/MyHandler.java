@@ -31,9 +31,8 @@ public class MyHandler implements HttpHandler {
                 requestBodyContent.append(line);
             }
             request.append("参数：").append(requestBodyContent.toString()).append("<br/>");
-        } else {
-            
         }
+
         log.info(request.toString());
 
         //处理响应
