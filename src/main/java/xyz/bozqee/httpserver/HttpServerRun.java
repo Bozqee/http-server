@@ -25,7 +25,6 @@ public class HttpServerRun {
         log.info("80端口监听中...");
 
         //将路径为 CONTEXT 请求映射到MyHttpServerHandler处理器
-//        httpServer.createContext(CONTEXT, new MyHttpServerHandler());
         httpServer.createContext(CONTEXT, new MyHandler());
         log.info(CONTEXT+"路径开启");
 
